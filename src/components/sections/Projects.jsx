@@ -98,7 +98,7 @@ export const Projects = () => {
                                 A command-line application for visualizing historical weather trends and predicting future temperatures using Unicode candlestick charts and linear regression.
                             </p>
                             <div>
-                                {["JavaScript", "p5.js"].map((tech, key) => (
+                                {["C++"].map((tech, key) => (
                                 <span key={key} className="bg-purple-800/10 text-pink-500 py-1 px-3 rounded-full text-sm hover:bg-purple-700/20 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition">
                                     {tech}
                                 </span>
@@ -126,7 +126,7 @@ export const Projects = () => {
                                 Play through three different game modes, experience realistic ball collisions, strategic cue control, and enjoy creative bonus features like time rewind and target zone challenges.
                             </p>
                             <div>
-                                {["JavaScript", "p5.js"].map((tech, key) => (
+                                {["JavaScript", "p5.js", "matter.js"].map((tech, key) => (
                                 <span key={key} className="bg-purple-800/10 text-pink-500 py-1 px-3 rounded-full text-sm hover:bg-purple-700/20 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition">
                                     {tech}
                                 </span>
