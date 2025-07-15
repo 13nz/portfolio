@@ -29,7 +29,7 @@ export const Home = () => {
                             <Github className="w-6 h-6" />
                         </a>
                         <a
-                            href="www.linkedin.com/in/lena-c-273465243/"
+                            href="https://www.linkedin.com/in/lena-c-273465243/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-pink-600 hover:text-pink-400 transition-transform hover:-translate-y-1"
