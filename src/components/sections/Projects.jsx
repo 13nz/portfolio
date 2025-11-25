@@ -7,6 +7,9 @@ import rpgImg from "../../assets/rpg.png"
 import koniImg from "../../assets/koni.png"
 import colorithmImg from "../../assets/colorithm.png"
 import pixelSpinImg from "../../assets/pixelspin.png"
+import ffIgm from "../../assets/forest_forager.png"
+import echoesImg from "../../assets/echoes.jpg"
+
 import { Github, ExternalLink, Play } from "lucide-react";
 
 
@@ -151,6 +154,60 @@ export const Projects = () => {
                                 </a>
                                 <a
                                     href="https://13nz.github.io/music-visualizer/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-purple-500 hover:text-purple-300 transition-transform hover:-translate-y-1"
+                                    aria-label="Live Demo"
+                                >
+                                    <Play className="w-5 h-5" />
+                                </a>
+                            </div>
+                        </div>
+
+                        {/*  forest forager */}
+                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-purple-400/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)]">
+                            <img src={ffIgm} alt="Forest Forager Screenshot" className="w-full h-48 object-cover rounded-lg mb-4" />
+                            <h3 className="text-xl font-bold mb-2">Forest Forager</h3>
+                            <p className="text-gray-400 mb-4">
+                                A 2D pixel art item collecting game. Made in 2 weeks for a game jam in Godot, using GDScript.
+                            </p>
+                            <div>
+                                {["Godot", "GDScript"].map((tech, key) => (
+                                <span key={key} className="bg-purple-800/10 text-pink-500 py-1 px-3 rounded-full text-sm hover:bg-purple-700/20 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition">
+                                    {tech}
+                                </span>
+                                ))}
+                            </div>
+                            <div className="flex justify-center gap-6 mt-4">
+                                <a
+                                    href="https://lenzz.itch.io/forest-forager"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-purple-500 hover:text-purple-300 transition-transform hover:-translate-y-1"
+                                    aria-label="Live Demo"
+                                >
+                                    <Play className="w-5 h-5" />
+                                </a>
+                            </div>
+                        </div>
+
+                        {/*  echoes in the hull */}
+                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-purple-400/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)]">
+                            <img src={echoesImg} alt="Game Screenshot" className="w-full h-48 object-cover rounded-lg mb-4" />
+                            <h3 className="text-xl font-bold mb-2">Echoes in the Hull</h3>
+                            <p className="text-gray-400 mb-4">
+                                A horror themed survival/puzzle 2D game completed in 2 weeks for the GameDev.tv game jam. Made in Unity using C#.
+                            </p>
+                            <div>
+                                {["C#", "Unity"].map((tech, key) => (
+                                <span key={key} className="bg-purple-800/10 text-pink-500 py-1 px-3 rounded-full text-sm hover:bg-purple-700/20 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition">
+                                    {tech}
+                                </span>
+                                ))}
+                            </div>
+                            <div className="flex justify-center gap-6 mt-4">
+                                <a
+                                    href="https://nullpixelstudios.itch.io/echoes-in-the-hull"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-purple-500 hover:text-purple-300 transition-transform hover:-translate-y-1"
