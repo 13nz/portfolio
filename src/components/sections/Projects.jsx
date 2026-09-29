@@ -9,6 +9,9 @@ import colorithmImg from "../../assets/colorithm.png"
 import pixelSpinImg from "../../assets/pixelspin.png"
 import ffIgm from "../../assets/forest_forager.png"
 import echoesImg from "../../assets/echoes.jpg"
+import dogDetectiveImg from "../../assets/dog_detective.jpeg"
+import returnToSenderImg from "../../assets/return_to_sender.png"
+import trailTalesImg from "../../assets/trail_tales.png"
 
 import { Github, ExternalLink, Play } from "lucide-react";
 
@@ -23,6 +26,74 @@ export const Projects = () => {
                     </h2>
                     {/*  grid of projects */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                        {/*  trail tales */}
+                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-purple-400/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)]">
+                            <img src={trailTalesImg} alt=" Screenshot" className="w-full h-48 object-cover rounded-lg mb-4" />
+                                <h3 className="text-xl font-bold mb-2">TrailTales</h3>
+                                <p className="text-gray-400 mb-4">
+                                    A mobile app made with React & Expo that lets users plan trips, customize journals, report wildlife, and read campfire stories, using the National Park Service API.
+                                </p>
+                                <div>
+                                    {["JavaScript", "React", "Expo", "Supabase", "SQL"].map((tech, key) => (
+                                    <span key={key} className="bg-purple-800/10 text-pink-500 py-1 px-3 rounded-full text-sm hover:bg-purple-700/20 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition">
+                                        {tech}
+                                    </span>
+                                    ))}
+                                </div>
+                                <div >
+                                <div className="flex justify-center gap-6 mt-4">
+                                    <a
+                                        href="https://github.com/13nz/TrailTales"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-purple-500 hover:text-purple-300 transition-transform hover:-translate-y-1"
+                                        aria-label="GitHub"
+                                    >
+                                        <Github className="w-5 h-5" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/*  return to sender */}
+                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-purple-400/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)]">
+                            <img src={returnToSenderImg} alt=" Screenshot" className="w-full h-48 object-cover rounded-lg mb-4" />
+                                <h3 className="text-xl font-bold mb-2">Return to Sender</h3>
+                                <p className="text-gray-400 mb-4">
+                                    A short 2D top-down narrative game about a courier delivering a mysterious letter in a coastal neighborhood. Made in Unity with C#, with custom pixel art.
+                                </p>
+                                <div>
+                                    {["C#", "Unity"].map((tech, key) => (
+                                    <span key={key} className="bg-purple-800/10 text-pink-500 py-1 px-3 rounded-full text-sm hover:bg-purple-700/20 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition">
+                                        {tech}
+                                    </span>
+                                    ))}
+                                </div>
+                                <div >
+                                <div className="flex justify-center gap-6 mt-4">
+                                    <a
+                                        href="https://github.com/13nz/ReturnToSender"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-purple-500 hover:text-purple-300 transition-transform hover:-translate-y-1"
+                                        aria-label="GitHub"
+                                    >
+                                        <Github className="w-5 h-5" />
+                                    </a>
+                                    <a
+                                        href="https://lenzz.itch.io/return-to-sender"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-purple-500 hover:text-purple-300 transition-transform hover:-translate-y-1"
+                                        aria-label="Live Demo"
+                                    >
+                                        <Play className="w-5 h-5" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                         {/*  space beagle */}
                         <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-purple-400/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)]">
                             <img src={spaceBeagleImg} alt="Space Beagle Screenshot" className="w-full h-48 object-cover rounded-lg mb-4" />
@@ -79,6 +150,35 @@ export const Projects = () => {
                                 <div className="flex justify-center gap-6 mt-4">
                                     <a
                                         href="https://github.com/13nz/PixelSpin"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-purple-500 hover:text-purple-300 transition-transform hover:-translate-y-1"
+                                        aria-label="GitHub"
+                                    >
+                                        <Github className="w-5 h-5" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/*  dog detevtive vr */}
+                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-purple-400/30 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)]">
+                            <img src={dogDetectiveImg} alt="PixelSpin Screenshot" className="w-full h-48 object-cover rounded-lg mb-4" />
+                                <h3 className="text-xl font-bold mb-2">Dog Detective VR</h3>
+                                <p className="text-gray-400 mb-4">
+                                    A short VR experience where you play as a dog, tasked to find your owner's keys.
+                                </p>
+                                <div>
+                                    {["C#", "Unity", "VR", "XR Interaction Toolkit"].map((tech, key) => (
+                                    <span key={key} className="bg-purple-800/10 text-pink-500 py-1 px-3 rounded-full text-sm hover:bg-purple-700/20 hover:shadow-[0_2px_8px_rgba(59, 130, 246, 0.2)] transition">
+                                        {tech}
+                                    </span>
+                                    ))}
+                                </div>
+                                <div >
+                                <div className="flex justify-center gap-6 mt-4">
+                                    <a
+                                        href="https://github.com/13nz/DogDetectiveVR"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-purple-500 hover:text-purple-300 transition-transform hover:-translate-y-1"
